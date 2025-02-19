@@ -5,6 +5,7 @@ import { HyperText } from "@/components/magicui/hyper-text";
 import Image from "next/image";
 import { Tilt } from "@/components/ui/tilt";
 import { ModeToggle } from "@/components/mode-toggle";
+import { SpinningText } from "@/components/magicui/spinning-text";
 
 export default function Home() {
   const [key, setKey] = useState(0);
@@ -19,9 +20,15 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <Tilt  isRevese>
-        <Image width={200} height={200} alt="Thinking monkey pic" src={"/image.png"} className="" />
-      </Tilt>
+      <div className="absolute flex justify-center items-center top-24 ">
+        {/* Apply the "example" class to SpinningText */}
+        <SpinningText reverse className="text-4xl absolute top-28 " duration={12} radius={7}>
+          chmpz.club • chmpz.club • chmpz.club •
+        </SpinningText>
+        <Tilt isRevese>
+          <Image width={200} height={200} alt="Thinking monkey pic" src={"/image.png"} className="" />
+        </Tilt>
+      </div>
       <HyperText key={key}>Coming Soon</HyperText>
       <ModeToggle />
     </div>
