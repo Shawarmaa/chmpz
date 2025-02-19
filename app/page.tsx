@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="absolute flex justify-center items-center top-24 ">
+      <div className="absolute flex justify-center items-center top-40 ">
         {/* Apply the "example" class to SpinningText */}
         <SpinningText reverse className="text-4xl absolute top-28 " duration={12} radius={7}>
           chmpz.club • chmpz.club • chmpz.club •
