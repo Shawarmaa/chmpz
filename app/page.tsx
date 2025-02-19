@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { HyperText } from "@/components/magicui/hyper-text";
 import Image from "next/image";
 import { Tilt } from "@/components/ui/tilt";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   const [key, setKey] = useState(0);
@@ -22,6 +23,7 @@ export default function Home() {
         <Image width={200} height={200} alt="Thinking monkey pic" src={"/image.png"} className="" />
       </Tilt>
       <HyperText key={key}>Coming Soon</HyperText>
+      <ModeToggle />
     </div>
   );
 }
