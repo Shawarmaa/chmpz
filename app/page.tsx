@@ -20,15 +20,11 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="absolute flex justify-center items-center top-40 ">
-        {/* Apply the "example" class to SpinningText */}
-        <SpinningText reverse className="text-4xl absolute top-28 " duration={12} radius={7}>
-          chmpz.club • chmpz.club • chmpz.club •
-        </SpinningText>
+
         <Tilt isRevese>
           <Image width={200} height={200} alt="Thinking monkey pic" src={"/image.png"} className="" />
         </Tilt>
-      </div>
+
       <HyperText key={key}>Coming Soon</HyperText>
       <ModeToggle />
     </div>
