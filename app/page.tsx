@@ -5,7 +5,6 @@ import { HyperText } from "@/components/magicui/hyper-text";
 import Image from "next/image";
 import { Tilt } from "@/components/ui/tilt";
 import { ModeToggle } from "@/components/mode-toggle";
-import { SpinningText } from "@/components/magicui/spinning-text";
 
 export default function Home() {
   const [key, setKey] = useState(0);
